@@ -719,11 +719,17 @@
                 ✦ Professional Beauty Care ✦
             </p>
 <button
+    type="button"
     class="hair-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'Hair';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closeHairServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 150);
     ">
     Book Your Hair Service
 </button>
@@ -1792,11 +1798,17 @@
                 ✦ Beauty • Precision • Confidence ✦
             </p>
 <button
+    type="button"
     class="pmu-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'PMU & Aesthetic';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closePmuServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 300);
     ">
     Book Your PMU & Aesthetic Service
 </button>

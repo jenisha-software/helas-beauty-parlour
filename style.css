@@ -9053,3 +9053,186 @@ footer {
 .academy-box span {
     color: #321522 !important;
 }
+/* =========================================
+   FINAL DESKTOP HEADER ALIGNMENT
+========================================= */
+
+@media (min-width: 701px) {
+
+    .header {
+        position: relative;
+        width: 100%;
+        height: 88px;
+        padding: 0 45px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar {
+        width: auto !important;
+        flex: 1;
+        display: flex !important;
+        align-items: center;
+        justify-content: center !important;
+        gap: 24px !important;
+        margin: 0 auto;
+    }
+
+    .navbar a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .mobile-header-actions {
+        position: absolute;
+        right: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-menu-btn {
+        display: none !important;
+    }
+
+    .nav-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 11px 18px;
+        background: #C9A45C;
+        color: #321522 !important;
+
+        border: 1px solid #C9A45C;
+        border-radius: 25px;
+
+        font-size: 11px;
+        font-weight: 600;
+        white-space: nowrap;
+
+        text-decoration: none;
+    }
+
+    .nav-button:hover {
+        background: #E1C98F;
+        color: #21131A !important;
+    }
+}
+
+
+/* =========================================
+   MOBILE HEADER
+========================================= */
+
+@media (max-width: 700px) {
+
+    header.header {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+
+        width: 100%;
+        padding: 10px 16px;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-header-actions {
+        position: static;
+        transform: none;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar {
+        display: none !important;
+    }
+
+    .nav-button {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+
+        padding: 9px 16px;
+
+        background: #FFFFFF !important;
+        color: #5A3150 !important;
+
+        border: 1px solid #C9A45C !important;
+        border-radius: 22px;
+
+        font-size: 9px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    .mobile-menu-btn {
+        display: flex !important;
+        margin-left: auto;
+        border: none !important;
+        outline: none !important;
+        background: transparent !important;
+    }
+}
+/* =========================================
+   MOBILE MENU - FINAL FIX
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar.mobile-open {
+        position: absolute !important;
+        top: 100% !important;
+        left: 12px !important;
+        right: 12px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+
+        padding: 8px !important;
+
+        background: #321522 !important;
+        border: 1px solid rgba(201, 164, 92, 0.45) !important;
+        border-radius: 12px !important;
+
+        box-shadow: 0 15px 35px rgba(33, 19, 26, 0.35);
+        z-index: 9999 !important;
+    }
+
+    .navbar.mobile-open a {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px 14px !important;
+        box-sizing: border-box;
+
+        color: #FFFFFF !important;
+        font-size: 12px !important;
+        text-decoration: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .navbar.mobile-open a:last-child {
+        border-bottom: none;
+    }
+}
