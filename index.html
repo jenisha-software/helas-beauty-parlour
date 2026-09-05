@@ -729,7 +729,7 @@
                 behavior: 'smooth',
                 block: 'start'
             });
-        }, 150);
+        }, 300);
     ">
     Book Your Hair Service
 </button>
@@ -1009,13 +1009,19 @@
                 ✦ Professional Skin Care ✦
             </p>
 <button
+    type="button"
     class="skin-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'Skin & Facial';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closeSkinServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 300);
     ">
-    Book Your Skin & Facial Service
+    Book Your Skin Service
 </button>
 
         </div>
@@ -1227,16 +1233,22 @@
             <p>
                 ✦ Beauty • Style • Confidence ✦
             </p>
-
-            <button
+<button
+    type="button"
     class="makeup-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'Makeup';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closeMakeupServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 300);
     ">
     Book Your Makeup Service
 </button>
+           
 
         </div>
 
@@ -1424,13 +1436,19 @@
             </p>
 
            <button
+    type="button"
     class="nail-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'Nail Art';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closeNailServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 300);
     ">
-    Book Your Nail Art Service
+    Book Your Nail Service
 </button>
         </div>
 
@@ -1545,12 +1563,18 @@
                 ✦ Beauty • Art • Expression ✦
             </p>
 
-            <button
+           <button
+    type="button"
     class="tattoo-book-btn"
     onclick="
         document.getElementById('appointmentService').value = 'Tattoo';
-        document.getElementById('appointmentForm').scrollIntoView({behavior:'smooth'});
         closeTattooServices();
+        setTimeout(function () {
+            document.getElementById('appointmentForm').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }, 300);
     ">
     Book Your Tattoo Service
 </button>
