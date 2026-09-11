@@ -9236,3 +9236,260 @@ footer {
         border-bottom: none;
     }
 }
+
+/* =========================================
+   ABOUT US CTA BUTTONS
+========================================= */
+
+.about-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.about-button,
+.about-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    transition: all 0.3s ease;
+}
+
+/* Explore Services */
+.about-button {
+    background: #ffffff;
+    color: #222;
+}
+
+.about-button:hover {
+    transform: translateY(-3px);
+}
+
+/* WhatsApp */
+.about-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.about-whatsapp:hover {
+    background: #1ebe5d;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .about-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-button,
+    .about-whatsapp {
+        width: auto;
+    }
+}
+/* ABOUT US - HEADING & BUTTON ALIGNMENT */
+
+.about-content h2 {
+    font-size: clamp(34px, 3.8vw, 50px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.about-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.about-button,
+.about-whatsapp {
+    height: 48px;
+    min-width: 190px;
+    padding: 0 24px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    border-radius: 28px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-button {
+    background: #ffffff;
+    color: #222222;
+}
+
+.about-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.about-button:hover,
+.about-whatsapp:hover {
+    transform: translateY(-2px);
+}
+/* ABOUT BUTTONS - PERFECT ALIGNMENT */
+
+.about-buttons {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: nowrap;
+    margin-top: 24px;
+}
+
+.about-buttons .about-button,
+.about-buttons .about-whatsapp {
+    width: 210px;
+    height: 48px;
+    min-width: 210px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    border-radius: 28px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    margin: 0;
+}
+
+/* Explore button */
+.about-buttons .about-button {
+    background: #ffffff;
+    color: #222222;
+}
+
+/* WhatsApp button */
+.about-buttons .about-whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+/* Hover */
+.about-buttons .about-button:hover,
+.about-buttons .about-whatsapp:hover {
+    transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .about-buttons {
+        flex-wrap: wrap;
+    }
+
+    .about-buttons .about-button,
+    .about-buttons .about-whatsapp {
+        width: 100%;
+        max-width: 280px;
+        min-width: 0;
+    }
+}
+/* =========================================
+   APPOINTMENT - WHATSAPP ENQUIRY
+========================================= */
+
+.appointment-whatsapp {
+    margin: 28px auto 0;
+    padding: 24px 20px 10px;
+    max-width: 720px;
+
+    text-align: center;
+
+    /* clean divider above WhatsApp enquiry */
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.appointment-whatsapp p {
+    margin: 0 auto 16px;
+    max-width: 600px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666;
+}
+
+/* WhatsApp button */
+.appointment-whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    min-width: 210px;
+    height: 46px;
+    padding: 0 24px;
+
+    box-sizing: border-box;
+
+    background: #25D366;
+    color: #ffffff;
+
+    border-radius: 24px;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    box-shadow: 0 5px 16px rgba(37, 211, 102, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+.appointment-whatsapp-btn:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .appointment-whatsapp {
+        margin-top: 22px;
+        padding: 20px 15px 8px;
+    }
+
+    .appointment-whatsapp p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .appointment-whatsapp-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
